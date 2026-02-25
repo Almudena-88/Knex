@@ -17,13 +17,16 @@ module.exports = {
       password: '1234'
     },
     pool: { // Gestiona las conexiones simultáneas (min/max)
-      min: 2, 
+      min: 2,
       max: 10
     },
     migrations: {
       tableName: 'knex_migrations', // Nombre de la tabla q rastrea q migraciones ya se han ejecutado
       directory: './migrations'  // Para definir la ubicación de archivos de migrations
-    }
+    },
+    seeds: {
+      directory: './seeds'
+    },
   },
 
   staging: {

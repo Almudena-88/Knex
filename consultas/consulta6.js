@@ -1,4 +1,4 @@
-const db = require ('./db')
+const db = require ('../db')
 
 db ('libro')
 .insert({ id: 6, nombre: 'La rosa', autor: 'Luis'})

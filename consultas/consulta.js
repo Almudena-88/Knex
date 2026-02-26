@@ -1,4 +1,4 @@
-const db = require('./db');
+const db = require('../db');
 
 db.withSchema('public') // asegura que busque la tabla específicamente en el esquema public
     .select('*')
